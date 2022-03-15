@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import QuizContext from "../store/QuizContext";
+import QuizContext from "../../store/QuizContext";
 import "./Pocetna.css";
 
 const Pocetna = () => {

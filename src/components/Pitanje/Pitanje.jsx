@@ -1,12 +1,13 @@
 import React, { useContext, useState } from "react";
-import QuizContext from "../store/QuizContext";
+import QuizContext from "../../store/QuizContext";
 import "./Pitanje.css";
 
 const Pitanje = ({ pitanjaIodgovori }) => {
   const [pitanjeIndex, setPitanjeIndex] = useState(0);
   const { pitanje, odgovori, tacanOdgovor } = pitanjaIodgovori[pitanjeIndex];
   const {
-    timer,
+    minutes,
+    seconds,
     setFinished,
     tacniOdg,
     setTacniOdg,
@@ -86,7 +87,10 @@ const Pitanje = ({ pitanjaIodgovori }) => {
           </button>
         </form>
         <div className="posleForm">
-          <p>Timer: {timer}</p>
+          <p>
+            Timer: {minutes}:{seconds < 10 && "0"}
+            {seconds}
+          </p>
           <button className="odustaniBtn" onClick={() => resetQuiz()}>
             Odustani
           </button>

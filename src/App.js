@@ -3,7 +3,7 @@ import Pitanje from './components/Pitanje/Pitanje';
 import Pocetna from './components/Pocetna/Pocetna';
 import { useContext, useEffect, useState } from "react";
 import pitanjaIodgovori from './pitanjaIodgovori.json';
-import QuizContext from './components/store/QuizContext';
+import QuizContext from './store/QuizContext';
 import ZavrsenKviz from './components/ZavrsenKviz/ZavrsenKviz';
 
 function App() {
