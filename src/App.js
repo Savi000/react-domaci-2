@@ -1,24 +1,34 @@
-import logo from './logo.svg';
 import './App.css';
+import Pitanje from './components/Pitanje/Pitanje';
+import Pocetna from './components/Pocetna/Pocetna';
+import { useContext, useEffect, useState } from "react";
+import pitanjaIodgovori from './pitanjaIodgovori.json';
+import QuizContext from './components/store/QuizContext';
+import ZavrsenKviz from './components/ZavrsenKviz/ZavrsenKviz';
 
 function App() {
+
+  // const { pitanjeIndex } = useContext(QuizContext);
+  // const [pitanjeIndex, setPitanjeIndex] = useState(0);
+  const { finished, isStarted } = useContext(QuizContext);
+
+  // const sledecePitanje = () => {
+  //   setPitanjeIndex(prev => prev + 1);
+  // }
+
+  // useEffect(() => {
+
+  // <Pitanje pitanja={pitanjaIodgovori[pitanjeIndex]} sledecePitanje={sledecePitanje} />
+
+  // }, [pitanjeIndex])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {!isStarted && !finished && <Pocetna />}
+      {isStarted && !finished && <Pitanje pitanjaIodgovori={pitanjaIodgovori} />}
+      {!isStarted && finished && <ZavrsenKviz ukupanBroj={pitanjaIodgovori.length} />}
+    </>
+
   );
 }
 

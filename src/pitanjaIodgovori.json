@@ -1,0 +1,25 @@
+ [{
+    "pitanje": "Koja se komanda koristi za kreiranje React aplikacije?",
+    "odgovori": { "a": "npm create-react-app", "b": "npx create-react-app myApp", "c": "npm create-react-app myApp", "d": "npx create-react-app" },
+    "tacanOdgovor": "b"
+  }, {
+    "pitanje": "Koja je uloga myApp u sledecoj komandi: npx create-react-app myApp?",
+    "odgovori": { "a": "Tip aplikacije koju kreiramo", "b": "pokazivac ka vec postojecoj aplikaciji", "c": "ime koje koristimo za novu aplikaciju", "d": "folder u kojem kreiramo novu aplikaciju" },
+    "tacanOdgovor": "c"
+  }, {
+    "pitanje": "Koja se komanda koristi da pokrenemo aplikaciju u local development serveru?",
+    "odgovori":{ "a": "npm serve", "b": "npm start", "c": "npm run dev", "d": "npm build" },
+    "tacanOdgovor": "b"
+  },
+  {
+    "pitanje": "Koji je uobicajeni local host port koji React dev server koristi? ",
+    "odgovori": { "a": "3000", "b": "5000", "c": "3500", "d": "8080" },
+    "tacanOdgovor": "a"
+  },
+  {
+    "pitanje": "Koja kljucna rijec kreira konstantu u React-u?",
+    "odgovori": { "a": "var", "b": "let", "c": "const", "d": "constant" },
+    "tacanOdgovor": "c"
+  }
+  
+  ]

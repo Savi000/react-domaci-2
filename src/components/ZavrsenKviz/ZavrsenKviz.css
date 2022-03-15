@@ -1,0 +1,21 @@
+.kraj {
+  text-align: center;
+  border: 1px solid black;
+  width: 30%;
+  margin: auto;
+}
+.kraj button {
+  margin-bottom: 10px;
+  border: 1px solid black;
+  outline: none;
+  padding: 10px;
+  background: orange;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.kraj button:hover {
+  transition: 0.3s;
+  background: orangered;
+  border: 1px solid lightgray;
+  color: whitesmoke;
+}

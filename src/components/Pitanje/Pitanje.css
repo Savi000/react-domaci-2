@@ -1,0 +1,68 @@
+/* .none {
+  display: none;
+} */
+
+.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.sve {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  box-shadow: 0 0 10px black;
+  width: 60%;
+  margin: auto;
+}
+.pitanje {
+  background: rgba(0, 0, 0, 0.7);
+  /* height: 50px; */
+  color: whitesmoke;
+  margin-top: 0;
+  padding: 10px 20px;
+}
+.pitanje span {
+  padding-top: 25px;
+}
+
+.odgForm {
+  padding: 10px;
+}
+.odg {
+  border: 1px solid lightgray;
+}
+.odg label {
+  display: inline-block;
+  width: 80%;
+  height: 100%;
+  padding: 15px 10px;
+}
+.submitBtn {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.posleForm {
+  text-align: center;
+  line-height: 10px;
+}
+.odustaniBtn {
+  width: 30%;
+  padding: 5px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s;
+}
+.odustaniBtn:hover {
+  color: white;
+  background-color: gray;
+  transition: 0.2s;
+}
+@media (max-width: 768px) {
+  .sve {
+    width: 100%;
+  }
+}
